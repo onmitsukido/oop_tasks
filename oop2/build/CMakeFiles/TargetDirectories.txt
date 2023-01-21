@@ -1,0 +1,4 @@
+C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop2/build/CMakeFiles/functions.dir
+C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop2/build/CMakeFiles/main.dir
+C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop2/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop2/build/CMakeFiles/ZERO_CHECK.dir
