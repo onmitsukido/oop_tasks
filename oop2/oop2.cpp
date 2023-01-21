@@ -7,23 +7,8 @@ using namespace std;
 
 int main()
 {
-    string tag = "#";
     string str;
-    cout << "string input: ";
+    cout << "string input:" << endl;
     getline(cin, str);
-    int length = str.length();
-    if ((length <= 100) && (length != 0))
-    {
-        uppercase(str);
-        remove_spaces(str);
-        str = tag + str;
-        cout << str << endl;
-    }
-    else
-    {
-        cout << "the string has 0 or more than 100 symbols" << endl;
-        cout << "string length: " << length << endl;
-    }
-
-    return 0;
+    cout << add_hashtag(str) << endl;
 }

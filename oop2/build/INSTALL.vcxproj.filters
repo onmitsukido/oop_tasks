@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop2\build\CMakeFiles\148d7c7bd8b140d1f973efe1efd28464\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E415E179-73F1-3851-A068-86ACD0815108}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\DNS\APPDATA\LOCAL\PROGRAMS\MICROSOFT VS CODE\OOPTASKS\OOP6\BUILD\CMAKEFILES\D49E11A94F6C7F51C271BA3B1BE7411D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop6" "-BC:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop6/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop6/build/oop6.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

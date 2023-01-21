@@ -1,0 +1,10 @@
+^C:\USERS\DNS\APPDATA\LOCAL\PROGRAMS\MICROSOFT VS CODE\OOPTASKS\OOP2\GOOGLETEST\GOOGLETEST\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop2" "-BC:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop2/build" --check-stamp-file "C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop2/build/googletest/googletest/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
