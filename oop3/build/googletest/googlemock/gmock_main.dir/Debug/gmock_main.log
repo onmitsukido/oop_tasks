@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop3/googletest/googlemock/CMakeLists.txt
+  gtest-all.cc
+  gmock-all.cc
+  gmock_main.cc
+  Создание кода...
+  gmock_main.vcxproj -> C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop3\build\lib\Debug\gmock_main.lib

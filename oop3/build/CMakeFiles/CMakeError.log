@@ -1,0 +1,63 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop3/build/CMakeFiles/CMakeScratch/TryCompile-6urda3
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_14c5b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31329 для x64
+  src.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_14c5b.dir\Debug\\" /Fd"cmTC_14c5b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop3\build\CMakeFiles\CMakeScratch\TryCompile-6urda3\src.c"
+C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop3\build\CMakeFiles\CMakeScratch\TryCompile-6urda3\src.c(1,10): fatal error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop3\build\CMakeFiles\CMakeScratch\TryCompile-6urda3\cmTC_14c5b.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop3/build/CMakeFiles/CMakeScratch/TryCompile-lwkbm4
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f26c6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31329 для x64
+  CheckFunctionExists.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f26c6.dir\Debug\\" /Fd"cmTC_f26c6.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop3\build\CMakeFiles\CMakeScratch\TryCompile-lwkbm4\CheckFunctionExists.c"
+LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop3\build\CMakeFiles\CMakeScratch\TryCompile-lwkbm4\cmTC_f26c6.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/DNS/AppData/Local/Programs/Microsoft VS Code/ooptasks/oop3/build/CMakeFiles/CMakeScratch/TryCompile-uxmgx0
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ec7b9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31329 для x64
+  CheckFunctionExists.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ec7b9.dir\Debug\\" /Fd"cmTC_ec7b9.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop3\build\CMakeFiles\CMakeScratch\TryCompile-uxmgx0\CheckFunctionExists.c"
+LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\Users\DNS\AppData\Local\Programs\Microsoft VS Code\ooptasks\oop3\build\CMakeFiles\CMakeScratch\TryCompile-uxmgx0\cmTC_ec7b9.vcxproj]
+
+
+
