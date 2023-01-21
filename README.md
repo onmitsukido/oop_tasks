@@ -1,1 +1,1 @@
-в заданиях main.exe находится в build\Debug\
+В заданиях main.exe находится в build\Debug\
